@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoZ landing page - Design</title>
+    <link rel="stylesheet" href="Index.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=nohemi@400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yukita+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yukita+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <!-----Navgation------>
+    <nav class="Navibar">
+      <div class="CryptoZ-left">
+        <img src="nexo-(nexo).png" alt="nexo" class="nexo" />
+        <div class="CryptoZ">Crypto<span>Z</span></div>
+      </div>
+      <div class="Middle-Menu-text">
+        <a class="item" href="#">Home</a>
+        <a class="item" href="#">Product</a>
+        <a class="item" href="#">Price</a>
+        <a class="item" href="#">Learn</a>
+        <a class="item" href="#">Support</a>
+      </div>
+
+      <div class="Right-Menu-text">
+        <div class="item">Sign in</div>
+        <div class="Get-Started">Get Started</div>
+      </div>
+
+       <!-- Hamburger on mobile -->
+      <div class="hamburger">&#9776;</div>
+    </nav>
+
+    <!-----Hero-Section------>
+    <section class="hero">
+      <div class="all-content">
+        <div class="left-content">
+          <h1>
+            Your all-in-one platform<br />to buy, sell, trade, and<br /><span
+              >earn Cryptocurrencies</span
+            >
+          </h1>
+          <p>
+            Open a free account in minutes right from your phone <br />and make
+            your money go further
+          </p>
+          <br /><br />
+          <div class="email-box">
+            <input type="email" placeholder="Email Address...." />
+            <button>Get started</button>
+          </div>
+        </div>
+
+        <div class="converter">
+          <h2>Currency Converter</h2>
+          <label>Amount</label>
+          <div class="currency-box">
+            <div class="currency-left">
+              <img id="from-flag" src="https://flagcdn.com/us.svg" alt="From Flag" class="flag" />
+              <select id="from-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="GHS">GHS</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="INR">INR</option>
+                <option value="CNY">CNY</option>
+                <option value="NZD">NZD</option>
+                <option value="CHF">CHF</option>
+                <option value="ZAR">ZAR</option>
+                <option value="KES">KES</option>
+                <option value="NGN">NGN</option>
+                <option value="BRL">BRL</option>
+                <option value="MXN">MXN</option>
+                <option value="SAR">SAR</option>
+                <option value="AED">AED</option>
+                <option value="SEK">SEK</option>
+                <option value="NOK">NOK</option>
+                <option value="DKK">DKK</option>
+                <option value="SGD">SGD</option>
+                <option value="HKD">HKD</option>
+                <option value="KRW">KRW</option>
+                <option value="THB">THB</option>
+                <option value="PLN">PLN</option>
+                <option value="TRY">TRY</option>
+                <option value="RUB">RUB</option>
+                <option value="EGP">EGP</option>
+                <option value="PKR">PKR</option>
+              </select>
+            </div>
+            <div class="divider"></div>
+             <input type="text" id="from-amount" value="1" step="0.0001" />
+          </div>
+          <label>Converted to</label>
+          <div class="currency-box">
+            <div class="currency-left">
+              <img id="to-flag" src="https://flagcdn.com/eu.svg" alt="To Flag" class="flag" />
+              <select id="to-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="GHS">GHS</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="INR">INR</option>
+                <option value="CNY">CNY</option>
+                <option value="NZD">NZD</option>
+                <option value="CHF">CHF</option>
+                <option value="ZAR">ZAR</option>
+                <option value="KES">KES</option>
+                <option value="NGN">NGN</option>
+                <option value="BRL">BRL</option>
+                <option value="MXN">MXN</option>
+                <option value="SAR">SAR</option>
+                <option value="AED">AED</option>
+                <option value="SEK">SEK</option>
+                <option value="NOK">NOK</option>
+                <option value="DKK">DKK</option>
+                <option value="SGD">SGD</option>
+                <option value="HKD">HKD</option>
+                <option value="KRW">KRW</option>
+                <option value="THB">THB</option>
+                <option value="PLN">PLN</option>
+                <option value="TRY">TRY</option>
+                <option value="RUB">RUB</option>
+                <option value="EGP">EGP</option>
+                <option value="PKR">PKR</option>
+              </select>
+            </div>
+            <div class="divider"></div>
+            <input type="text" id="to-amount" value="0" step="0.0001" />
+          </div>
+
+          <label>Date</label>
+          <div class="date-box">
+            <span class="arrow">◀</span>
+            <input type="date"  class="date-input" />
+            <span class="arrow">▶</span>
+          </div>
+          <p class="currencies">EUR GBP BTC</p>
+        </div>
+        <img src="Cam2.png" alt="Cam2" class="CAMP2" />
+        <img src="Cam1.png" alt="Cam1" class="CAMP1" />
+      </div>
+    </section>
+    
+
+
+<script>
+const currencyFlags = {
+  USD: "https://flagcdn.com/us.svg",
+  EUR: "https://flagcdn.com/eu.svg",
+  GBP: "https://flagcdn.com/gb.svg",
+  GHS: "https://flagcdn.com/gh.svg",
+  JPY: "https://flagcdn.com/jp.svg",
+  AUD: "https://flagcdn.com/au.svg",
+  CAD: "https://flagcdn.com/ca.svg",
+  INR: "https://flagcdn.com/in.svg",
+  CNY: "https://flagcdn.com/cn.svg",
+  NZD: "https://flagcdn.com/nz.svg",
+  CHF: "https://flagcdn.com/ch.svg",
+  ZAR: "https://flagcdn.com/za.svg",
+  KES: "https://flagcdn.com/ke.svg",
+  NGN: "https://flagcdn.com/ng.svg",
+  BRL: "https://flagcdn.com/br.svg",
+  MXN: "https://flagcdn.com/mx.svg",
+  SAR: "https://flagcdn.com/sa.svg",
+  AED: "https://flagcdn.com/ae.svg",
+  SEK: "https://flagcdn.com/se.svg",
+  NOK: "https://flagcdn.com/no.svg",
+  DKK: "https://flagcdn.com/dk.svg",
+  SGD: "https://flagcdn.com/sg.svg",
+  HKD: "https://flagcdn.com/hk.svg",
+  KRW: "https://flagcdn.com/kr.svg",
+  THB: "https://flagcdn.com/th.svg",
+  PLN: "https://flagcdn.com/pl.svg",
+  TRY: "https://flagcdn.com/tr.svg",
+  RUB: "https://flagcdn.com/ru.svg",
+  EGP: "https://flagcdn.com/eg.svg",
+  PKR: "https://flagcdn.com/pk.svg",
+};
+
+const fromCurrency = document.getElementById("from-currency");
+const toCurrency = document.getElementById("to-currency");
+const fromAmount = document.getElementById("from-amount");
+const toAmount = document.getElementById("to-amount");
+const dateInput = document.querySelector(".date-input");
+const today = new Date();
+dateInput.value = today.toISOString().split("T")[0];
+const fromFlag = document.getElementById("from-flag");
+const toFlag = document.getElementById("to-flag");
+
+function updateFlags() {
+  fromFlag.src = currencyFlags[fromCurrency.value];
+  toFlag.src = currencyFlags[toCurrency.value];
+}
+
+async function convertCurrency() {
+  const from = fromCurrency.value;
+  const to = toCurrency.value;
+  const amount = parseFloat(fromAmount.value);
+
+  if (!amount || amount <= 0) {
+    toAmount.value = "";
+    return;
+  }
+
+  try {
+    const apiKey = "7b1ded116fd54965bcbdd7fa2fb45977";
+    const url = `https://exchange-rates.abstractapi.com/v1/live/?api_key=${apiKey}&base=${from}&target=${to}`;
+
+    console.log("API URL:", url);
+
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    const data = await res.json();
+    console.log("API Response:", data);
+
+    if (data && data.exchange_rates && data.exchange_rates[to]) {
+      const rate = data.exchange_rates[to];
+      toAmount.value = (amount * rate).toFixed(4);
+    } else {
+      toAmount.value = "N/A";
+    }
+  } catch (err) {
+    console.error(err);
+    toAmount.value = "Error";
+  }
+}
+
+[fromCurrency, toCurrency].forEach(sel =>
+  sel.addEventListener("change", () => { updateFlags(); convertCurrency(); })
+);
+
+fromAmount.addEventListener("input", convertCurrency);
+dateInput.addEventListener("change", convertCurrency);
+
+// Initial load
+updateFlags();
+convertCurrency();
+</script>
+
+
+
+    <!-----The logo with statistics.------>
+
+    <section class="rectangle3">
+      <div class="logos">
+        <img src="binance logo (1).png" alt="binance-logo" class="binance-logo"/>
+        <img src="Group 96.png" alt="Coinbase" class="Coinbase-logo" />
+        <img src="Group 97.png" alt="bitcoin" class="bitcoin-logo" />
+        <img src="Group 98.png" alt="tether" class="tether-logo" />
+        <img src="bitmex logo.png" alt="bitmex" class="bitmex-logo" />
+      </div>
+
+      <div class="statistics-container">
+        <div class="statistic-organizer">
+          <h2>99k</h2>
+          <p>People have joined</p>
+        </div>
+        <div class="divider1"></div>
+        <div class="statistic-organizer">
+          <h2>50k</h2>
+          <p>VVIP users have joined</p>
+        </div>
+        <div class="divider1"></div>
+        <div class="statistic-organizer">
+          <h2>100+</h2>
+          <p>Big Companies have joined</p>
+        </div>
+      </div>
+    </section>
+
+    <!-----Benefit section.------>
+    <section class="Benefit">
+      <div class="content-benefit-container-text">
+        <h1 class="Benefit-text">The Most Trusted Cryptocurrency Platform</h1>
+        <div class="Sub-texts">
+          <div class="ordered-list">01</div>
+          <div class="Sub-text1">
+            <h2>Sync between platforms</h2>
+            <p>
+              No matter if you're using our web interface or mobile app — your
+              data is always synced. Just one account for all our services.
+            </p>
+            <div class="divider2"></div>
+          </div>
+        </div>
+        <div class="Sub-texts">
+          <div class="ordered-list">02</div>
+          <div class="Sub-text">
+            <h2>More focus, less clutter</h2>
+            <p>No ads, just the crypto and content you love.</p>
+            <div class="divider2"></div>
+          </div>
+        </div>
+        <div class="Sub-texts">
+          <div class="ordered-list">03</div>
+          <div class="Sub-text">
+            <h2>Security by default</h2>
+            <p>Enable privacy mode and app locking to protect your data.</p>
+            <div class="divider2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="iphone-mockup">
+        <img src="Group 5347.png" alt="iphone-mockup" class="iphone-mockup1" />
+      </div>
+    </section>
+
+    <!-----Portfolio section------> 
+    <section class="portfolio_wrapper">
+      <div class="container">
+        <section class="top-grid">
+          <div class="card portfolio">
+            <img
+              src="Frame 8754.png"
+              alt="portfolio_pic"
+              class="portfolio_pic"
+            />
+            <h2>Create portfolio today</h2>
+            <p>
+              Buy and sell popular digital currencies, keep track of them in the
+              one place. Has a variety of features that make it the best place
+              to start trading
+            </p>
+          </div>
+          <div class="card trading">
+            <img
+              src="Frame 8754 (1).png"
+              alt="Lightning–Fast"
+              class="Lightning–Fast"
+            />
+            <div class="headpara">
+              <h2>Lightning–Fast Crypto Trading</h2>
+              <p>
+                The Exchange supports USD, EUR, and GBP. Invest in
+                cryptocurrency slowly over time by scheduling buys daily,
+                weekly, or monthly.
+              </p>
+            </div>
+          </div>
+          <div class="card security">
+            <img
+              src="Frame 8754 (2).png"
+              alt="Security_pic"
+              class="Security_pic"
+            />
+            <div class="headpara">
+              <h2>Security From Day One</h2>
+              <p>
+                Safety, security and compliance. Buy and sell popular digital
+                currencies, keep track of them in one place.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="start-section">
+          <h1>Get Started in Just Few Minute</h1>
+          <p class="peeee">
+            Has a variety of features that make it the best place to start
+            trading
+          </p>
+
+          <div class="steps-grid">
+            <div class="step">
+              <img src="Frame 219.png" alt="Signup" class="Sign_pic" />
+              <h3>Sign Up</h3>
+              <p>
+                Buy Bitcoin or Ethereum, then securely store it in your wallet
+                or send it on easily to friends
+              </p>
+            </div>
+            <div class="step">
+              <img src="Frame 220.png" alt="Fund-pic" class="Fund-pic" />
+              <h3>Fund</h3>
+              <p>
+                Choose your preferred payment method such as bank transfer or
+                credit card to top up your wallet
+              </p>
+            </div>
+            <div class="step">
+              <img src="Frame 221.png" alt="buy crypto" class="buy_crypto" />
+              <h3>Buy Crypto</h3>
+              <p>
+                Sign up for free wallet on web, iOS or Android and follow our
+                easy process to set up your profile
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-----Testimonial section------>
+
+    <section class="testimonial-section">
+      <h1 class="testi-h1" style="font-size: 45px;">What people <br>are saying</h1>
+      <div class="testimonials-grid">
+        <!-- Testimonial Card1 -->
+        <div class="card1">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://i.pravatar.cc/40?img=1" alt="Avatar" />
+              <div class="testimonial-header-text">
+                <h4>John doe</h4>
+                <p>CEO Motion Design Agency</p>
+              </div>
+            </div>
+            <div class="testimonial-body">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.dolor
+              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.” dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.” dolor sit amet, consectetur
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+
+        <!-- Testimonial Card3 -->
+        <div class="card3">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+              <div class="testimonial-header-text">
+                <h4>John doe</h4>
+                <p>CEO Motion Design Agency</p>
+              </div>
+            </div>
+            <div class="testimonial-body">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. do
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+
+        <!-- Testimonial Card5 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+
+        <!-- Testimonial Card6 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+        <!-- Testimonial Card7 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+        <!-- Testimonial Card8 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+        <!-- Testimonial Card9 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipisci ng elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+
+        <!-- Testimonial Card10 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+
+        <!-- Testimonial Card11 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+
+        <!-- Testimonial Card12 -->
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img src="https://i.pravatar.cc/40?img=2" alt="Avatar" />
+            <div class="testimonial-header-text">
+              <h4>John doe</h4>
+              <p>CEO Motion Design Agency</p>
+            </div>
+          </div>
+          <div class="testimonial-body">
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----CTA section------>
+
+    <section class="cta_container">
+      <div class="background">
+        <div class="ellipse1"></div>
+        <div class="ellipse2"></div>
+        <div class="ellipse3"></div>
+        <div class="ellipse4"></div>
+        <img src="btc.png" alt="btc_pic" class="btc_picture" />
+        <div class="cta-left">
+          <h2>Take your first step into safe, secure crypto investing</h2>
+          <div class="Get-Started5">Get started</div>
+        </div>
+        <div class="cta-right">
+          <img src="btc.png" alt="btc_pic" class="btc_picture" />
+          <img src="Titik-titik.png" alt="Titikpic" class="Titik_pic" />
+          <img src="eth.png" alt="eth coin" class="eth-coin" />
+          <img src="luna.png" alt="lunacoin" class="luna-coin" />
+        </div>
+      </div>
+    </section>
+
+    <!-------Footer section-->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Company -->
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Student</li>
+            <li>Security</li>
+            <li>Trust and Safety</li>
+            <li>Newsroom</li>
+            <li>Videos</li>
+          </ul>
+        </div>
+        <!-- Learn -->
+        <div class="footer-column">
+          <h4>Learn</h4>
+          <ul>
+            <li>What’s Trending</li>
+            <li>Product News</li>
+            <li>Events</li>
+            <li>University</li>
+            <li>Research</li>
+            <li>Market Updates</li>
+          </ul>
+        </div>
+        <!-- Products -->
+        <div class="footer-column">
+          <h4>Products</h4>
+          <ul>
+            <li>Stock & Fund</li>
+            <li>Cash Card</li>
+            <li>Crypto</li>
+            <li>Options</li>
+            <li>Gold</li>
+            <li>Learn Snacks</li>
+          </ul>
+        </div>
+        <!-- Support -->
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li>Support Center</li>
+            <li>Contact Us</li>
+            <li>System Status</li>
+            <li>Areas of Availability</li>
+          </ul>
+        </div>
+        <!-- Resources -->
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <ul>
+            <li>Prices</li>
+            <li>Site Widgets</li>
+            <li>Tax</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <h2>Did you know you can do more with crypto while on the go?</h2>
+        <div class="footer-logo">
+          <img src="CryptoZ.png" alt="Crypto_pic" />
+        </div>
+        <p>© Design by Christopher Frimpong. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="converter1.js"></script>
+  </body>
+</html>
